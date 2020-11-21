@@ -1,0 +1,18 @@
+version: '3'
+services:
+  sshtunnel:
+    build: .
+    container_name: sshtunnel
+    image: sshtunnel
+    restart: always
+    ports:
+      - "13400:13400"
+    environment:
+      - SSH_IP=10.0.1.2
+      - SSH_PORT=22
+      - SSH_USERNAME=ctf
+      - SSH_PASSWORD=SqjaVwE9
+      - REMOTE_BIND_ADDRESS=127.0.0.1
+      - REMOTE_BIND_PORT=13400
+      - LOCAL_IP=0.0.0.0
+      - LOCAL_PORT=13400
