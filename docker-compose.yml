@@ -1,9 +1,8 @@
 version: '3'
 services:
   sshtunnel:
-    build: .
     container_name: sshtunnel
-    image: sshtunnel
+    image: ssst0n3/sshtunnel:0.2.0
     restart: always
     ports:
       - "13400:13400"
