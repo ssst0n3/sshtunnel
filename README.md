@@ -1,4 +1,4 @@
-# sshtunnel
+# ssh tunnel
 
 default port: 13400
 
@@ -42,3 +42,13 @@ run
 ```
 SSH_IP=10.0.1.2 SSH_PORT=22 SSH_USERNAME=ctf SSH_PASSWORD=SqjaVwE9 REMOTE_BIND_ADDRESS=127.0.0.1 REMOTE_BIND_PORT=13400 LOCAL_IP=0.0.0.0 LOCAL_PORT=13400 ./sshtunnel
 ```
+
+## repository
+dockerhub: https://hub.docker.com/r/ssst0n3/sshtunnel
+github: https://github.com/ssst0n3/sshtunnel
+
+## golang usage
+```
+import "github.com/ssst0n3/sshtunnel"
+```
+ 
